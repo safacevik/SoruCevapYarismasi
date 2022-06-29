@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity">
+
+    <TextView
+        android:id="@+id/tvBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Hesap Oluştur"
+        android:textColor="#3E2723"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvBaslik"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_first_name"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#808080"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <EditText
+                    android:id="@+id/etFirstName_SignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/gunmetal"
+                    android:gravity="center"
+                    android:hint="Ad*"
+                    android:padding="10dp"
+                    android:textColor="@color/chinese_silver"
+                    android:textColorHint="#808080"
+                    android:textSize="15sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_last_name"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#808080"
+                app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                >
+
+                <EditText
+                    android:id="@+id/etLastName_SignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/gunmetal"
+                    android:gravity="center"
+                    android:hint="Soyad*"
+                    android:padding="10dp"
+                    android:textColor="@color/chinese_silver"
+                    android:textColorHint="#808080"
+                    android:textSize="15sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_user_name"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#808080"
+                app:layout_constraintTop_toBottomOf="@+id/layout_last_name"
+                >
+
+                <EditText
+                    android:id="@+id/etUserName_SignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/gunmetal"
+                    android:gravity="center"
+                    android:hint="Kullanıcı Adı*"
+                    android:padding="10dp"
+                    android:textColor="@color/chinese_silver"
+                    android:textColorHint="#808080"
+                    android:textSize="15sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_email"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#808080"
+                app:layout_constraintTop_toBottomOf="@+id/layout_user_name"
+                >
+
+                <EditText
+                    android:id="@+id/etEmail_SignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/gunmetal"
+                    android:gravity="center"
+                    android:hint="Email*"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/chinese_silver"
+                    android:textColorHint="#808080"
+                    android:textSize="15sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_password"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#808080"
+                app:layout_constraintTop_toBottomOf="@+id/layout_email"
+                >
+
+                <EditText
+                    android:id="@+id/etPassword_SignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/gunmetal"
+                    android:gravity="center"
+                    android:hint="Şifre*"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/chinese_silver"
+                    android:textColorHint="#808080"
+                    android:textSize="15sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_repeat_password"
+                android:layout_width="0dp"
+                app:layout_constraintWidth_percent="0.7"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#808080"
+                app:layout_constraintTop_toBottomOf="@+id/layout_password"
+                >
+
+                <EditText
+                    android:id="@+id/etRepeatPassword_SignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/gunmetal"
+                    android:gravity="center"
+                    android:hint="Şifre (Tekrar)*"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/chinese_silver"
+                    android:textColorHint="#808080"
+                    android:textSize="15sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btRegister"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="#3E2723"
+                android:elevation="2dp"
+                android:onClick="performSignUp"
+                android:text="Kayıt Ol"
+                android:textAllCaps="false"
+                android:textColor="@color/chinese_silver"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_repeat_password"
+                app:layout_constraintWidth_percent="0.7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    android:padding="16dp"
+    tools:context=".activity.QuizActivity">
+
+    <TextView
+        android:id="@+id/tvPuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puan: 0"
+        android:textColor="@color/chinese_silver"/>
+
+    <TextView
+        android:id="@+id/tvSoruNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soru: 1/x"
+        android:textColor="@color/chinese_silver"
+        android:layout_below="@+id/tvPuan"/>
+
+    <TextView
+        android:id="@+id/tvSonuclarBaslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rgCevaplar"
+        android:layout_marginBottom="16dp"
+        android:text="Soru metni buraya gelecek\nSoru metni buraya gelecek\nSoru metni buraya gelecek"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/rgCevaplar"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <RadioButton
+            android:id="@+id/rbCevap1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cevap 1"/>
+
+        <RadioButton
+            android:id="@+id/rbCevap2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cevap 2"/>
+
+        <RadioButton
+            android:id="@+id/rbCevap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cevap 3"/>
+
+        <RadioButton
+            android:id="@+id/rbCevap4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cevap 4"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOnayla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgCevaplar"
+        android:layout_marginTop="10dp"
+        android:text="Onayla"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnOncekiSoru"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOnayla"
+        android:layout_marginTop="10dp"
+        android:text="Önceki"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSonrakiSoru"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOnayla"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:text="Sonraki"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnBitir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Bitir"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

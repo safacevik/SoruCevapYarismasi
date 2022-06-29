@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    android:padding="16dp"
+    tools:context=".activity.StartingScreenActivity">
+
+    <TextView
+        android:id="@+id/tvCurrentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Kullanıcı: 'Mevcut Kullanıcı'"
+        android:textColor="#FFF3E0" />
+
+    <TextView
+        android:id="@+id/tvHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@id/tvCurrentUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="En Yüksek Puan: 0"
+        android:textColor="@color/chinese_silver"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spKategori"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/spKonu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnStartQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="319dp"
+        android:text="@string/start_test"
+        android:textAllCaps="false"
+        android:textColor="#CFD8DC"
+        tools:ignore="TextContrastCheck" />
+</RelativeLayout>
